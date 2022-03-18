@@ -209,6 +209,7 @@ forever(function () {
     mySprite2.vx = 0 - enemyspeed
     mySprite2.y = randint(10, scene.screenHeight() - 10)
     statusbar = statusbars.create(15, 2, StatusBarKind.EnemyHealth)
+    statusbar.setColor(8, 2)
     statusbar.attachToSprite(mySprite2)
     pause(enemyspawntime)
 })
